@@ -1,6 +1,6 @@
-import combineReducers from 'redux'
+import { combineReducers } from 'redux'
 import todoReducers from './todo/reducers/index.js';
 
-export default combineReducers(
-
-)
+export default combineReducers({
+	...todoReducers
+})
