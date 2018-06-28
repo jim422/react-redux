@@ -19,7 +19,7 @@ const ProductContainer = ({ products, addToCart }) => (
 	</ProductList>
 )
 
-ProductContainer.prototype = {
+ProductContainer.propTypes = {
 	products: PropTypes.arrayOf(PropTypes.shape({
 		id: PropTypes.number.isRequired,
 		title: PropTypes.string.isRequired,
